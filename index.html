@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(39, 134, 112);">
+    <h1 id="inicio" style="text-align: center; color: rgb(75, 20, 126); font-family: Verdana, Geneva, Tahoma, sans-serif;" title="Bem vindo ao site!"><sup>&lt;</sup>HTML: Desenvolvimento webs<sup>/&gt;</sup></h1>
+    <hr>
+    <ol>
+        <li><a href="#o-que-e-html">O que é <ins>HTML</ins>?</a></li>
+        <li>
+            <a href="#estrutura">Estrutura básica de um documento HTML</a>
+        </li>
+        <li>
+            <a href="#elementos">Principais elementos HTML</a> 
+            <ul>
+                <li><a href="#texto-head">3.1 Textos e cabeçalhos</a></li>
+                <li><a href="#lista">3.2 Listas</a></li>
+                <li><a href="#lista">3.3 Links</a></li>
+                <li><a href="#imagens">3.4 Imagens</a></li>
+            </ul>
+        </li>
+        <li><a href="#historia">História do HTML</a></li>
+        <li><a href="">Importância do HTML</a></li>
+        <li><a href="">Final do artigo!</a></li>
+    </ol>
+    <hr>
+    <h2 style="color: blue; font-family: Verdana, Geneva, Tahoma, sans-serif;" id="o-que-e-html">O que é <ins>HTML</ins></h1>
+    <small><a href="#inicio">&gt;&gt;&gt; (Voltar)</a></small>
+    <p>HTML é uma linguagem de marcação usada para estruturar o conteúdo da web. Ao contrário de linguagens de programação como Python ou JavaScript, que executam ações lógicas, o HTML é uma linguagem estática usada para definir a estrutura de uma página web. Ele utiliza tags (ou etiquetas) para indicar os diferentes tipos de conteúdo e como eles devem ser exibidos no navegador. HTML é interpretado pelos navegadores web, que convertem o código em uma página visual interativa. Cada página web é composta por um conjunto de elementos HTML que descrevem títulos, parágrafos, listas, imagens, links e outros componentes essenciais.</p>
+    <h2 style="color: blue; font-family: Verdana, Geneva, Tahoma, sans-serif;" id="estrutura">Estrutura Básica de um Documento HTML</h2>
+    <small><a href="#inicio">&gt;&gt;&gt; (Voltar)</a></small>
+    <p>A estrutura de um documento <strong>HTML</strong> é composta por uma série de elementos e tags (ou etiquetas) que ajudam a organizar e definir o conteúdo de uma página web. Um documento HTML básico possui algumas seções fundamentais, que são lidas e interpretadas pelos navegadores para exibir o conteúdo de forma adequada.</p>
+    <ul>
+        <li>
+            <mark>&lt;!DOCTYPE html&gt;</mark> - Esta linha é a primeira do documento e indica que a página é escrita em HTML5, a versão mais recente do HTML. O DOCTYPE informa ao navegador qual tipo de documento ele deve esperar, garantindo que o conteúdo seja renderizado corretamente.
+        </li>
+        <li>
+            <mark>&lt;HTML&gt;</mark> - é o elemento raiz de qualquer documento HTML. Ela engloba todo o conteúdo da página, exceto o DOCTYPE, que é especificado antes. O atributo lang="pt-br" indica que a língua principal do conteúdo é o português do Brasil, o que pode ser útil para otimizar a página para mecanismos de busca e acessibilidade.
+        </li>
+        <li>
+            &lt;HEAD&gt; - A seção &lt;head&gt; contém informações meta sobre a página, mas que não são exibidas diretamente na tela. Dentro do &lt;head&gt;, você geralmente encontrará:
+            <ul>
+                <li>
+                    <mark>&lt;meta charset="UTF-8"&gt</mark>; - Especifica o conjunto de caracteres utilizado na página, garantindo que ela exiba corretamente caracteres especiais (como acentos e cedilhas).
+                </li>
+                <li>
+                    <mark>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0&gt;</mark> - Essa meta tag ajuda a garantir que a página seja responsiva, ou seja, que se ajuste corretamente em dispositivos móveis.
+                </li>
+                <li>
+                    <mark>&lt;title&gt;</mark> - Define o título da página, que aparece na aba do navegador. No exemplo, o título é "Exemplo de Página HTML".
+                </li>
+            </ul>
+        </li>
+        <li>
+            <mark>&lt;BODY&gt;</mark> - O corpo do documento HTML é onde reside o conteúdo visível da página, ou seja, tudo o que o usuário verá ao acessar a página.
+            <ul>
+                <li>
+                    <mark>&lt;p&gt;</mark> - Define um parágrafo. Aqui, temos o texto "Este é um parágrafo de exemplo, escrito em HTML."
+                </li>
+                <li>
+                <mark>&lt;a href="https://www.exemplo.com"&gt;</mark> - A tag &lt;a&gt; define um link (âncora) para outra página ou recurso. O atributo href especifica o endereço de destino do link. No exemplo, ao clicar no link "Clique aqui para visitar o exemplo.com", o usuário será redirecionado para "https://www.exemplo.com".
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <h2 style="color: blue; font-family: Verdana, Geneva, Tahoma, sans-serif;" id="elementos">Principais Elementos HTML</h2>
+    <small><a href="#inicio">&gt;&gt;&gt; (Voltar)</a></small>
+    <p>HTML é composto por uma variedade de elementos que ajudam a estruturar o conteúdo da página. Alguns dos elementos mais comuns incluem:</p>
+    <ol>
+        <li id="texto-head">
+            Textos e cabeçalhos
+            <ul>
+                <li>&lt;h1&gt; a &lt;h6&gt; - Definem cabeçalhos, sendo &lt;h1&gt; o mais importante e &lt;h6&gt; o menos importante.</li>
+                <li>&lt;p&gt; - Define um parágrafo de texto.</li>
+                <li> &lt;strong&gt;- Define um texto em negrito, indicando ênfase importante.</li>
+                <li>&lt;em&gt; - Define um texto em itálico, geralmente usado para enfatizar.</li>
+            </ul>
+        </li>
+        <li id="lista">
+            Listas
+            <ul>
+                    <li>&lt;ul&gt; - Lista não ordenada (com marcadores).</li>
+                    <li>&lt;ol&gt; - Lista ordenada (numerada).</li>
+                    <li>&lt;li&gt; - : Item da lista.</li>
+            </ul>
+        </li>
+        <li id="imagens">
+            imagens
+             <ul>
+                <li>
+                    &lt;a&gt;: Define um link. O atributo href é usado para especificar o destino do link.
+                </li>
+                <li>
+                   &lt;img&gt;: Define uma imagem. O atributo src especifica a origem da imagem.
+                </li>
+            </ul>
+        </li>
+    </ol>
+    <hr>
+    <h2 style="text-align: center; color: blue; font-family: Verdana, Geneva, Tahoma, sans-serif;" id="historia">História do HTML</h2>
+    <small><a href="#inicio">&gt;&gt;&gt; (Voltar)</a></small>
+    <p>O HTML <strong>(HyperText Markup Language)</strong> é a espinha dorsal da World Wide Web, sendo a linguagem fundamental para a criação de páginas e sites. Sua história é marcada por inovações, mudanças significativas e o crescimento explosivo da Internet. Vamos explorar a evolução do HTML e como ele moldou a maneira como interagimos com a web hoje.</p>
+    <ol>
+        <li>
+            <h3 style="color: blue;">O Início da Web e o Surgimento do HTML (1989 - 1991)</h3>
+            <p>A história do HTML começa com Tim Berners-Lee, um cientista britânico que trabalhava no CERN (Organização Europeia para a Pesquisa Nuclear). Em 1989, Berners-Lee propôs a ideia da World Wide Web, um sistema que permitiria compartilhar informações de maneira mais fácil através de links e documentos interligados. Para tornar essa ideia viável, ele desenvolveu três tecnologias essenciais: HTML, URI (Uniform Resource Identifier) e HTTP (HyperText Transfer Protocol).Em 1991, Tim Berners-Lee criou o primeiro site da web, no qual introduziu o conceito de páginas interligadas por meio de links. O HTML foi a linguagem de marcação utilizada para estruturar o conteúdo do site, permitindo que textos e imagens fossem organizados de forma legível e navegável. A primeira versão do HTML era bem simples e focada em marcar textos e links.</p>
+        </li>
+        <li>
+            <h3 style="color: blue;"><del>HTML</del> 2.0: Primeira Padronização (1995)</h3>
+            <p>Com o sucesso crescente da web, tornou-se necessário criar uma versão mais padronizada do HTML. Isso levou à criação do HTML 2.0, que foi publicado em novembro de 1995 pelo World Wide Web Consortium (W3C), organização fundada por Tim Berners-Lee para padronizar a web. O HTML 2.0 consolidou as especificações iniciais da linguagem e adicionou novos elementos, como formulários e tabelas, que passaram a ser utilizados amplamente.</p>
+        </li>
+        <li>
+            <h3 style="color: blue;">4. <del>HTML</del> 4.01: A Consolidação e Adoção de Padrões (1999)</h3>
+            <p>Em 1999, o HTML 4.01 foi lançado, uma versão mais madura e estável da linguagem, que consolidou as versões anteriores e introduziu importantes mudanças para melhorar a acessibilidade e a separação entre estrutura e estilo. O HTML 4.01 também passou a incorporar o conceito de código semântico, que visava melhorar a leitura do código e a acessibilidade dos sites.
+
+                Uma das grandes inovações foi a introdução da recomendação de usar CSS (Cascading Style Sheets) para controlar a aparência dos sites, ao invés de utilizar diretamente as tags de formatação dentro do HTML. Isso permitiu que o HTML fosse focado na estruturação de conteúdo, enquanto o CSS cuidava da apresentação.</p>
+        </li>
+        <li>
+            <h3 style="color: blue;"><em>O HTML Hoje</em>: Uma Linguagem em Evolução Constante</h3>
+            <p>Desde o lançamento do HTML<sub>5</sub>, a linguagem continua sendo aprimorada, com atualizações sendo feitas regularmente para introduzir novos recursos e melhorar a performance. Embora a maioria dos desenvolvedores tenha adotado amplamente o HTML5, a especificação continua sendo desenvolvida e aprimorada pelo W3C e pelo WHATWG. Atualmente, o HTML continua sendo a principal linguagem para a criação de conteúdo na web. Ele é a base para muitas outras tecnologias como CSS e JavaScript, que são usadas para melhorar a aparência e a interatividade das páginas.</p>
+        </li>
+    </ol>
+    <hr>
+</body>
+</html>
